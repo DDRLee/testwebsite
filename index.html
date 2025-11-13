@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Sample HTML Page</title>
+</head>
+
+        <style>
+            *
+            {
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            
+            }
+            body
+            {
+                background-color: antiquewhite;
+            }
+            .head
+            {
+        
+                position:fixed;
+              background-color: aqua;
+                
+                font-family: monospace;
+                font-size: 36px;
+            
+                padding:35px;
+                width:100%;
+
+            }
+            .head h2
+            {
+            
+               float:right;
+
+                font-size: 36px;
+                
+            }
+            .head:hover
+            {
+                background-color:#000000;
+                color:#ffffff;
+            }
+            .head:hover
+            {
+            
+                cursor: pointer;
+            }
+            .box
+            {
+                display: grid;
+               
+            
+                margin:0 auto;
+                grid-template-columns:repeat(4,1fr);
+                
+                width: 85%;
+               padding-top: 240px;
+                gap:20px;
+             
+            }
+
+            .item
+            {
+            text-align: center;
+            line-height: 70px;
+            font-size: 35px;
+            color: white;
+            justify-content: center;
+            font-weight: bold;
+                
+                
+                background-color: rgb(69, 80, 227);
+                border-radius: 14px;
+                
+            }
+            .item:hover
+            {
+            
+                cursor: pointer;
+              
+                transform:scale(1.05) ;
+                background-color: #000000;
+            }
+          
+            
+            .item:nth-child(1)
+            {
+                line-height: 140px;
+                font-size: 70px;
+                color: black;
+                grid-column: 1/3;
+                grid-row:1/3;
+                background-image:url(./touxiang.png);
+                background-size: cover;        /* 图片自动铺满元素 */
+  
+                animation: scrollBg 16s linear infinite;
+           
+
+            }
+                @keyframes scrollBg {
+
+                0% {
+                background-position: center top;
+             }
+                50% {
+                background-position: center bottom;
+                }
+                100% {
+                background-position: center top;
+            }
+        }
+        </style>
+      
+
+            <div class="head"><h1>This is a test!</h1><h2>feel free to click!</h2></div>
+        <body>
+            <div class="box">
+                <div class="item">考研</div>
+                <div class="item">留学</div>
+                <div class="item">就业</div>
+                <div class="item">考公</div>
+                <div class="item">实习</div>
+                <div class="item">保研</div>
+                <div class="item">卷绩</div>
+                <div class="item">综测</div>
+                <div class="item">编不下去了</div>
+
+
+                
+            </div>
+        </body>
+        
+</html>
